@@ -28,6 +28,8 @@ exports.config = {
         './test/specs/**/ourCarsElectric.js',
         './test/specs/**/ourCarsMildHybrid.js',
         './test/specs/**/exploreOurModels.js',
+        './test/specs/**/footer.js',
+        './test/specs/**/menuBuy.js',
     ],
     // Patterns to exclude.
     exclude: [
@@ -63,6 +65,9 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'chrome',
+        'goog:chromeOptions': {
+           args: ['--headless', '--disable-gpu', '--window-size=1692,907'],
+        },
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
