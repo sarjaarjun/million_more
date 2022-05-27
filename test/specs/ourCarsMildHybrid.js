@@ -3,8 +3,12 @@ const mmPage = require('../pageobjects/millionMorePage.js')
 const expectchai = require('chai').expect
 
 describe('Our Cars Page Mild Hybrid', async () => {
-    it('Click our cars page text and Mild Hybrid suvs', async () => {
+    before('Open million more page and accept cookies', async () => {
         await mmPage.openMMPageAndAcceptCookies()
+    })
+
+    it('Click our cars page text and Mild Hybrid suvs', async () => {
+        await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {

@@ -440,12 +440,16 @@ class millionMorePage {
         return this.baseUrl + 'intl/build/s60-hybrid'
     }
 
+    get disclaimer () {
+        return $('//*[@id="Disclaimer-1"]/section/div/div[2]/div/p')
+    }
+
     get cookies () {
         return $("//a[normalize-space()='Cookies']")
     }
 
     get cookiesPageUrl () {
-        return $('intl/v/legal/cookies')
+        return this.baseUrl + 'intl/v/legal/cookies'
     }
 
     get legal () {
@@ -479,6 +483,75 @@ class millionMorePage {
     get tellUsPageUrl () {
         return this.baseUrl + 'intl/v/legal/tell-us-reporting-line'
     }
+
+    get menu () {
+        return $("//button[@id='sitenav-sidenav-toggle']")
+    }
+
+    get menuClose () {
+        return $("//button[@data-autoid='nav:siteNavCloseIcon']")
+    }
+
+    get buy () {
+        return $("//em[normalize-space()='Buy']")
+        // return $("//div[@role='list']//div[1]//button[1]//img[1]")
+    }
+
+    get purchase () {
+        return $("//h3[normalize-space()='Purchase']")
+    }
+
+    get buyCarConfigurator () {
+        return $("//em[normalize-space()='Car Configurator']")
+    }
+
+    get carConfiguratorPageUrl () {
+        return this.baseUrl + 'intl/build'
+    }
+
+    get buyFleetSales () {
+        return $("//em[normalize-space()='Fleet sales']")
+    }
+
+    get fleetSalesPageUrl () {
+        return this.baseUrl + 'intl/v/buy/fleet-cars'
+    }
+
+    get buySpecialVehicles () {
+        return $("//em[normalize-space()='Special Vehicles']")
+    }
+
+    get specialVehiclesPageUrl () {
+        return this.baseUrl + 'intl/special-vehicles/'
+    }
+
+    get buyUsedCars () {
+        return $("//em[normalize-space()='Used cars']")
+    }
+
+    get usedCarsPageUrl () {
+        return this.baseUrl + 'intl/buy/purchase/used-cars'
+    }
+
+    get buyDiplomaticSales () {
+        return $("//em[normalize-space()='Diplomatic sales']")
+    }
+
+    get diplomaticSalesPageUrl () {
+        return this.baseUrl + 'intl/v/where-to-buy-diplomat-cars'
+    }
+
+    get buyChildSeats () {
+        return $("//em[normalize-space()='Child seats']")
+    }
+
+    get childSeatsPageUrl () {
+        return this.baseUrl + 'intl/v/buy/accessories/child-seats'
+    }
+
+    get backNavigate () {
+        return $("//button[@aria-label='Go back in Site Navigation']")
+    }
     // open the million more url page and accept cookies
     async openMMPageAndAcceptCookies() {
         await browser.url(this.mmPageUrl)
@@ -493,6 +566,7 @@ class millionMorePage {
     
     async openMMPage() {
         await browser.url(this.mmPageUrl)
+        // await browser.setWindowSize(1692, 907)
     }
 }
 

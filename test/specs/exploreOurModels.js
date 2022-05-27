@@ -2,8 +2,12 @@ const mmPage = require('../pageobjects/millionMorePage.js')
 const expectchai = require('chai').expect
 
 describe('Main Page', async () => {
-    it('Click Next & Previous Button', async () => {
+    before('Open million more page and accept cookies', async () => {
         await mmPage.openMMPageAndAcceptCookies()
+    })
+
+    it('Click Next & Previous Button', async () => {
+        await mmPage.openMMPage()
         await mmPage.exploreOurModels.scrollIntoView()
         await mmPage.nextButton.click()
         await mmPage.previousButton.click()
@@ -151,8 +155,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'V90 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.v90HybridPageUrl)
     })
 
     it('Click MM Page V90 Learn', async () => {
@@ -171,8 +173,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'V90 hybrid page url is not seen'
             })  
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.v90HybridPageUrl)
     })
 
     it('Click MM Page V90 Shop', async () => {
@@ -191,8 +191,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'V90 shop page url is not seen'
             })  
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.v90ShopPageUrl)
     })
 
     it('Click MM Page V60', async () => {
@@ -212,8 +210,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'V60 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.v60HybridPageUrl)
     })
 
     it('Click MM Page V60 Learn', async () => {
@@ -233,8 +229,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'V60 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.v60HybridPageUrl)
     })
 
     it('Click MM Page V60 Shop', async () => {
@@ -254,8 +248,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'V60 shop page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.v60ShopPageUrl)
     })
 
     it('Click MM Page S90', async () => {
@@ -276,8 +268,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'S90 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.s90HybridPageUrl)
     })
 
     it('Click MM Page S90 Learn', async () => {
@@ -298,8 +288,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'S90 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.s90HybridPageUrl)
     })
 
     it('Click MM Page S90 Shop', async () => {
@@ -320,8 +308,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'S90 shop page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.s90ShopPageUrl)
     })
 
     it('Click MM Page S60', async () => {
@@ -343,8 +329,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'S60 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.s60HybridPageUrl)
     })
 
     it('Click MM Page S60 Learn', async () => {
@@ -366,8 +350,6 @@ describe('Main Page', async () => {
                 timeout: 10000,
                 timeoutMsg: 'S60 hybrid page url is not seen'
             }) 
-        // const newPageUrl = await browser.getUrl()
-        // expectchai(newPageUrl).to.equal(mmPage.s60HybridPageUrl)
     })
 
     it('Click MM Page S60 Shop', async () => {
