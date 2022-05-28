@@ -1,7 +1,7 @@
 const mmPage = require('../pageobjects/millionMorePage.js')
 const expectchai = require('chai').expect
 
-describe('Main Page', async () => {
+describe('Million More Page', async () => {
     it('Click Watch Story', async () => {
         await mmPage.openMMPageAndAcceptCookies()
         await mmPage.watchTheStory.click()
