@@ -5,12 +5,10 @@ class millionMorePage {
     
     // define selectors using getter methods
     get homePageLogo () {
-        // return $('._SN-aq._SN-ax._SN-ay._SN-az._SN-ba._SN-bb._SN-bc._SN-be._SN-bf._SN-bi._SN-ha._SN-hb._SN-hc._SN-hd._SN-u._SN-w')
         return $('//*[@id="site-nav-topbar-wrapper"]/nav/div[1]/a')
     }
 
     get mmPageUrl () {
-        // return this.baseUrl + '/intl/v/car-safety/a-million-more'
         return  'intl/v/car-safety/a-million-more'
     }
 
@@ -23,7 +21,6 @@ class millionMorePage {
     }
 
     get ourCars () {
-        // return $('._SN-cf._SN-co._SN-do._SN-dp._SN-dr._SN-dt._SN-du._SN-dw._SN-dy._SN-dz._SN-eb._SN-ed._SN-ee._SN-eg._SN-ei._SN-ge._SN-gg._SN-gh._SN-gi._SN-gj._SN-gk._SN-gl._SN-hn._SN-ho._SN-hp._SN-i')
         return $('//*[@id="nav:topNavCarMenu"]/em')
     }
 
@@ -36,13 +33,11 @@ class millionMorePage {
     }
 
     get suvsHybrid () {
-        // return $("div[id='site-nav-cars-menu-section-panel-1'] h4[class='_SN-do _SN-dp _SN-dr _SN-du _SN-dw _SN-dz _SN-eb _SN-ee _SN-eg _SN-ek _SN-el _SN-en _SN-eo _SN-eq _SN-er _SN-et _SN-eu _SN-i _SN-ig _SN-ii _SN-km _SN-lc _SN-ld _SN-le _SN-mm _SN-mn _SN-mo _SN-mp _SN-mq _SN-mr _SN-ms _SN-mt _SN-mu'] a[class='_SN-ay _SN-az _SN-dp _SN-dr _SN-ge _SN-gf _SN-i _SN-ig _SN-io _SN-mv _SN-mw _SN-mx _SN-my _SN-mz _SN-na _SN-nb _SN-nc _SN-nd _SN-ne _SN-nf _SN-ng _SN-nh _SN-ni _SN-nj _SN-nk _SN-nl']")
         return $('//*[@id="site-nav-cars-menu-section-panel-1"]/div/h4[1]/div/a')
     }
 
     get xc90Hybrid () {
         return $("img[alt='XC90 Recharge']")
-        // return $('//*[@id="site-nav-cars-menu-section-panel-1"]/div/div[1]/a/div/div')
     }
 
     get xc90HybridPageUrl () {
@@ -58,7 +53,6 @@ class millionMorePage {
     }
 
     get xc40Hybrid () {
-        // return $('body > div:nth-child(2) > nav:nth-child(11) > div:nth-child(10) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(4) > a:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > em:nth-child(1)')
         return $("(//img[@alt='XC40 Recharge'])[2]")
     }
 
@@ -71,7 +65,6 @@ class millionMorePage {
     }
 
     get estatesHybrid () {
-        // return $("#site-nav-cars-menu-section-panel-1 > div > h4._SN-do._SN-dp._SN-dr._SN-du._SN-dw._SN-dz._SN-eb._SN-ee._SN-eg._SN-ek._SN-el._SN-en._SN-eo._SN-eq._SN-er._SN-et._SN-eu._SN-i._SN-ig._SN-ii._SN-km._SN-lc._SN-ld._SN-mc._SN-mm._SN-mn._SN-mo._SN-mq._SN-mr._SN-ms._SN-mt._SN-mu._SN-oe > div > a")
         return $('//*[@id="site-nav-cars-menu-section-panel-1"]/div/h4[2]/div/a')
     }
 
@@ -92,7 +85,6 @@ class millionMorePage {
     }
 
     get sedansHybrid () {
-        // return $("#site-nav-cars-menu-section-panel-1 > div > h4._SN-do._SN-dp._SN-dr._SN-du._SN-dw._SN-dz._SN-eb._SN-ee._SN-eg._SN-ek._SN-el._SN-en._SN-eo._SN-eq._SN-er._SN-et._SN-eu._SN-i._SN-ig._SN-ii._SN-km._SN-lc._SN-ld._SN-mm._SN-mn._SN-mo._SN-mq._SN-mr._SN-ms._SN-mt._SN-mu._SN-oi._SN-oj > div > a")
         return $('//*[@id="site-nav-cars-menu-section-panel-1"]/div/h4[3]/div/a')
     }
 
@@ -253,22 +245,18 @@ class millionMorePage {
     }
 
     get amyTestimonial () {
-        // return $("(//*[name()='circle'])[2]")
         return $('//*[@id="VideoTestimonials-1"]/section/div/div[2]/div[1]/div[1]/div/button')
     }
 
     get summerTestimonial () {
-        // return $("(//*[name()='circle'])[3]")
         return $('//*[@id="VideoTestimonials-1"]/section/div/div[2]/div[2]/div[1]/div/button')
     }
 
     get lindaAndMollyTestimonial () {
-        // return $("(//*[name()='circle'])[4]")
         return $('//*[@id="VideoTestimonials-1"]/section/div/div[2]/div[3]/div[1]/div/button')
     }
 
     get alexTestimonial () {
-        // return $("(//*[name()='circle'])[5]")
         return $('//*[@id="VideoTestimonials-1"]/section/div/div[2]/div[4]/div[1]/div/button')
     }
 
@@ -494,7 +482,6 @@ class millionMorePage {
 
     get buy () {
         return $("//em[normalize-space()='Buy']")
-        // return $("//div[@role='list']//div[1]//button[1]//img[1]")
     }
 
     get purchase () {
@@ -552,6 +539,267 @@ class millionMorePage {
     get backNavigate () {
         return $("//button[@aria-label='Go back in Site Navigation']")
     }
+
+    get video () {
+        return $('//*[@id="Video-1"]/section/div/button/div/video')
+    }
+
+    get own () {
+        return $("//em[normalize-space()='Own']")
+    }
+
+    get ownerInfo () {
+        return $("//h3[normalize-space()='Owner info']")
+    }
+
+    get ownSupport () {
+        return $("//em[normalize-space()='Support']")
+    }
+
+    get supportPageUrl () {
+        return this.baseUrl + 'intl/support'
+    }
+
+    get ownServiceRepair () {
+        return $("//em[normalize-space()='Service & Repair']")
+    }
+
+    get serviceRepairPageUrl () {
+        return this.baseUrl + 'intl/own/owner-info/service-and-repair'
+    }
+
+    get ownAccessories () {
+        return $("//em[normalize-space()='Accessories']")
+    }
+
+    get accessoriesPageUrl () {
+        return this.baseUrl + 'intl/v/buy/accessories'
+    }
+
+    get ownVolvoRecall () {
+        return $("//em[normalize-space()='Volvo Recall']")
+    }
+
+    get volvoRecallPageUrl () {
+        return this.baseUrl + 'intl/v/own/recall'
+    }
+
+    get ownVolvoExperience () {
+        return $("//em[normalize-space()='Volvo experience']")
+    }
+
+    get volvoExperiencePageUrl () {
+        return this.baseUrl + 'intl/v/volvo-experience'
+    }
+
+    get ownVolvoCarsApp () {
+        return $("//em[normalize-space()='Volvo Cars app']")
+    }
+
+    get volvoCarsAppPageUrl () {
+        return this.baseUrl + 'intl/v/volvo-cars-app'
+    }
+
+    get ownEUEmissionTests () {
+        return $("//em[normalize-space()='EU emission tests']")
+    }
+
+    get euEmissionTestsPageUrl () {
+        return this.baseUrl + 'intl/own/explore/eu-emission-tests'
+    }
+
+    get aboutVolvo () {
+        return $("//em[normalize-space()='About Volvo']")
+    }
+
+    get aboutVolvoOurStory () {
+        return $("//a[@href='https://www.volvocars.com/intl/v/our-story']")
+    }
+
+    get ourStoryPageUrl () {
+        return this.baseUrl + 'intl/v/our-story'
+    }
+
+    get aboutVolvoSustainability () {
+        return $("//em[normalize-space()='Sustainability']")
+    }
+
+    get sustainabilityPageUrl () {
+        return this.baseUrl + 'intl/v/sustainability/highlights'
+    }
+
+    get aboutVolvoSafety () {
+        return $("//em[normalize-space()='Safety']")
+    }
+
+    get safetyPageUrl () {
+        return this.baseUrl + 'intl/v/car-safety'
+    }
+
+    get aboutVolvoOurNews () {
+        return $("//em[normalize-space()='Our news']")
+    }
+
+    get ourNewsPageUrl () {
+        return this.baseUrl + 'intl/news/'
+    }
+
+    get aboutVolvoCareers () {
+        return $("//em[normalize-space()='Careers']")
+    }
+
+    get careersPageUrl () {
+        return this.baseUrl + 'intl/v/careers/highlights'
+    }
+
+    get aboutVolvoInvestors () {
+        return $("//em[normalize-space()='Investors']")
+    }
+
+    get investorsPageUrl () {
+        return 'https://investors.volvocars.com/en'
+    }
+
+    get aboutVolvoSuppliers () {
+        return $("//em[normalize-space()='Suppliers']")
+    }
+
+    get suppliersPageUrl () {
+        return this.baseUrl + 'intl/v/suppliers/responsible-business'
+    }
+
+    get aboutVolvoAwards () {
+        return $("//em[normalize-space()='Awards']")
+    }
+
+    get awardsPageUrl () {
+        return 'https://www.media.volvocars.com/global/en-gb/awards'
+    }
+
+    get aboutVolvoExperienceVolvoCars () {
+        return $("//em[normalize-space()='Experience Volvo Cars']")
+    }
+
+    get experiencePageUrl () {
+        return this.baseUrl + 'intl/v/discover/volvo-experience-centers'
+    }
+
+    get explore () {
+        return $("//em[normalize-space()='Explore']")
+    }
+
+    get exploreRecharge () {
+        return $("//em[normalize-space()='Recharge']")
+    }
+
+    get exploreConcepts () {
+        return $("//em[normalize-space()='Concepts']")
+    }
+
+    get conceptsPageUrl () {
+        return this.baseUrl + 'intl/v/cars/concept-models'
+    }
+
+    get exploreElectricCars () {
+        return $("//em[normalize-space()='Electric cars']")
+    }
+
+    get electricCarsPageUrl () {
+        return this.baseUrl + 'intl/v/cars/electric-cars'
+    }
+
+    get more () {
+        return $("//em[normalize-space()='More']")
+    }
+
+    get moreContactUs () {
+        return $("//em[normalize-space()='Contact Us']")
+    }
+
+    get contactUsPageUrl () {
+        return this.baseUrl + 'intl/v/legal/contact-us'
+    }
+
+    get moreMediaPress () {
+        return $("//em[normalize-space()='Media/Press']")
+    }
+
+    get mediaPressPageUrl () {
+        return 'https://www.media.volvocars.com/global/en-gb'
+    }
+
+    get moreLifestyleCollection () {
+        return $("//em[normalize-space()='Lifestyle Collection']")
+    }
+
+    get lifestyleCollectionPageUrl () {
+        return 'https://www.collection.volvocars.com/'
+    }
+
+    get moreInvestorRelations () {
+        return $("//em[normalize-space()='Investor Relations']")
+    }
+
+    get investorRelationsPageUrl () {
+        return 'https://investors.volvocars.com/en'
+    }
+
+    get moreMilitarySales () {
+        return $("//em[normalize-space()='Military Sales']")
+    }
+
+    get militarySalesPageUrl () {
+        return 'https://usmilitary.volvoprograms.com/'
+    }
+
+    get facebook () {
+        return $("//a[@aria-label='Facebook']")
+    }
+
+    get facebookPageUrl () {
+        return 'https://www.facebook.com/volvocars/'
+    }
+
+    get instagram () {
+        return $("//a[@aria-label='Instagram']")
+    }
+
+    get instagramPageUrl () {
+        return 'https://www.instagram.com/volvocars/'
+    }
+
+    get instagramLoginPageUrl () {
+        return 'https://www.instagram.com/accounts/login/?next=/volvocars/'
+    }
+
+    get twitter () {
+        return $("//a[@aria-label='Twitter']")
+    }
+
+    get twitterPageUrl () {
+        return 'https://twitter.com/volvocars'
+    }
+
+    get youtube () {
+        return $("//a[@aria-label='YouTube']")
+    }
+
+    get youtubePageUrl () {
+        return 'https://www.youtube.com/user/VolvoCarsNews'
+    }
+
+    get international () {
+        return $('//*[@id="nav:sideNavigation"]/div[2]/div[2]/div/div/div[1]/div[3]/button')
+    }
+
+    get company () {
+        return $("//em[normalize-space()='Company']")
+    }
+
+    get volvoCarsInternational () {
+        return $("//em[normalize-space()='Volvo Cars International']")
+    }
+
     // open the million more url page and accept cookies
     async openMMPageAndAcceptCookies() {
         await browser.url(this.mmPageUrl)
@@ -564,9 +812,9 @@ class millionMorePage {
         })
     }
     
+    // open the million more url page
     async openMMPage() {
         await browser.url(this.mmPageUrl)
-        // await browser.setWindowSize(1692, 907)
     }
 }
 

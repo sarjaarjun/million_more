@@ -1,3 +1,4 @@
+const { join } = require('path')
 exports.config = {
     //
     // ====================
@@ -30,6 +31,14 @@ exports.config = {
         './test/specs/**/exploreOurModels.js',
         './test/specs/**/footer.js',
         './test/specs/**/menuBuy.js',
+        './test/specs/**/menuOwn.js',
+        './test/specs/**/menuAbout.js',
+        './test/specs/**/menuExplore.js',
+        './test/specs/**/menuMore.js',
+        './test/specs/**/menuInternational.js',
+        './test/specs/**/menuSocialMedia.js',
+        // './test/specs/**/grid.js',
+        './test/specs/**/imageComparison.js',
     ],
     // Patterns to exclude.
     exclude: [
@@ -71,7 +80,7 @@ exports.config = {
                 '--headless',
                 '--disable-gpu',
                 '--window-size=1692,907',
-                '--disable-dev-shm-usage'
+                // '--disable-dev-shm-usage'
             ],
         },
         acceptInsecureCerts: true
@@ -114,7 +123,7 @@ exports.config = {
     baseUrl: 'https://www.volvocars.com/',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 60000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -127,7 +136,33 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: ['chromedriver',
+        [
+            'image-comparison',
+            {
+                baselineFolder: join(process.cwd(), './test/baseline/'),
+                formatImageName: '{tag}-{logName}-{width}x{height}',
+                screenshotPath: join(process.cwd(), '.tmp/'),
+                savePerInstance: true,
+                autoSaveBaseline: true,
+                blockOutStatusBar: true,
+                blockOutToolBar: true,
+                disableCSSAnimation: true,
+                hideScrollBars: true,
+                tabbableOptions:{
+                    circle:{
+                        size: 18,
+                        fontSize: 18,
+                        // ...
+                    },
+                    line:{
+                        color: '#ff221a', // hex-code or for example words like `red|black|green`
+                        width: 3,
+                    },
+                }
+            }
+        ]
+    ],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -161,7 +196,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000,
+        timeout: 120000,
         retries: 2
     },
     //

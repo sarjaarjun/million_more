@@ -4,22 +4,24 @@ const expectchai = require('chai').expect
 
 describe('Our Cars Page Mild Hybrid', async () => {
     before('Open million more page and accept cookies', async () => {
+        // Open million more page and accept cookies
         await mmPage.openMMPageAndAcceptCookies()
     })
 
     it('Click our cars page text and Mild Hybrid suvs', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.suvsMildHybrid.click()
@@ -29,18 +31,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid XC90', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         // Check the XC90 page url
@@ -50,18 +53,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid XC60', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         // Check the XC60 page url
@@ -71,18 +75,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid XC40', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         // Check the XC40 page url
@@ -92,18 +97,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid estates', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.estatesMildHybrid.click()
@@ -113,18 +119,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid V90', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.v90MildHybrid.click()
@@ -134,18 +141,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid V60', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.v60MildHybrid.click()
@@ -155,18 +163,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid V90 Cross Country', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.v90CrossCountryMildHybrid.click()
@@ -176,18 +185,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid V60 Cross Country', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.v60CrossCountryMildHybrid.click()
@@ -197,18 +207,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid sedans', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.sedansMildHybrid.click()
@@ -218,18 +229,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid S90', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.s90MildHybrid.click()
@@ -239,18 +251,19 @@ describe('Our Cars Page Mild Hybrid', async () => {
     })
 
     it('Click our cars page text and Mild Hybrid S60', async () => {
+        // Open million more page and open our cars
         await mmPage.openMMPage()
         await mmPage.ourCars.click()
         await browser.waitUntil(async () => await expectchai(await mmPage.ourCarsClose.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Our cars link doesnt open'
             })
         await mmPage.mildHybrid.click()
         // Check mild hybrid tab is open
         await browser.waitUntil(async () => await expectchai(await mmPage.suvsMildHybrid.isDisplayed()).to.be.true,
             {
-                timeout: 10000,
+                timeout: 60000,
                 timeoutMsg: 'Mild Hybrid tab is not open'
             })
         await mmPage.s60MildHybrid.click()
