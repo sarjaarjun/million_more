@@ -17,7 +17,7 @@ describe('Menu Own tests', async () => {
                 timeout: 60000,
                 timeoutMsg: 'Menu is not open'
             })
-        await browser.pause(1000)
+        await browser.pause(2000)
         await mmPage.own.click()
         // Wait for own to open
         await browser.waitUntil(async () => await expectchai(await mmPage.ownerInfo.isDisplayed()).to.be.true,

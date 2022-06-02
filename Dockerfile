@@ -15,4 +15,7 @@ RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/
 
 RUN npm install -g allure-commandline
 
-CMD npx wdio && allure generate allure-results --clean && allure open -p 54015
+RUN apt-get -y install vim
+
+# CMD npx wdio; allure generate allure-results --clean && allure open -p 54015
+CMD npm run testMillionMore; npm run generateReport

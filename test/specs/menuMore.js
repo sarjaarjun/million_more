@@ -17,7 +17,7 @@ describe('Menu About Volvo tests', async () => {
                 timeout: 60000,
                 timeoutMsg: 'Menu is not open'
             })
-        await browser.pause(1000)
+        await browser.pause(2000)
         await mmPage.more.click()
         // Wait for more to open
         await browser.waitUntil(async () => await expectchai(await mmPage.moreContactUs.isDisplayed()).to.be.true,
@@ -89,7 +89,7 @@ describe('Menu About Volvo tests', async () => {
         const handles = await browser.getWindowHandles()// 2 windows
         await browser.switchToWindow(handles[1])
         // Check military sales page url
-        await browser.waitUntil(async () => await expectchai(await browser.getUrl()).to.equal(mmPage.militarySalesPageUrl),
+        await browser.waitUntil(async () => await expectchai(await browser.getUrl()).to.be.oneOf([mmPage.militarySalesPageUrl, mmPage.militarySalesPageUrl2]),
             {
                 timeout: 60000,
                 timeoutMsg: 'Military Sales page url is not seen'

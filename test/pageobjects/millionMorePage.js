@@ -752,6 +752,10 @@ class millionMorePage {
         return 'https://usmilitary.volvoprograms.com/'
     }
 
+    get militarySalesPageUrl2 () {
+        return this.baseUrl + 'military'
+    }
+
     get facebook () {
         return $("//a[@aria-label='Facebook']")
     }

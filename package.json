@@ -11,9 +11,11 @@
         "chai": "^4.3.6",
         "chromedriver": "^101.0.0",
         "wdio-chromedriver-service": "^7.3.2",
+        "wdio-docker-service": "^3.2.0",
         "wdio-image-comparison-service": "^3.1.1"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "testMillionMore": "wdio run wdio.conf.js",
+        "generateReport": "allure generate allure-results --clean && allure open -p 54015"
     }
 }

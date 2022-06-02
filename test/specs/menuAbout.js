@@ -17,7 +17,7 @@ describe('Menu About Volvo tests', async () => {
                 timeout: 60000,
                 timeoutMsg: 'Menu is not open'
             })
-        await browser.pause(1000)
+        await browser.pause(2000)
         await mmPage.aboutVolvo.click()
         // Wait for about volvo to open
         await browser.waitUntil(async () => await expectchai(await mmPage.aboutVolvoOurStory.isDisplayed()).to.be.true,

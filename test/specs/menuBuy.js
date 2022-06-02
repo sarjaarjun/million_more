@@ -17,7 +17,7 @@ describe('Menu Buy tests', async () => {
                 timeout: 60000,
                 timeoutMsg: 'Menu is not open'
             })
-        await browser.pause(1000)
+        await browser.pause(2000)
         await mmPage.buy.click()
         // Wait for buy to open
         await browser.waitUntil(async () => await expectchai(await mmPage.purchase.isDisplayed()).to.be.true,
